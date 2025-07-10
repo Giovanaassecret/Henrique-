@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lista de Presentes - Henrique Marcolino</title>
+  <style>
+     body {
+    font-family: "Segoe UI", sans-serif;
+    margin: 0;
+    background-image: url('FotoM.webp');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7); /* ajuste aqui a opacidade */
+    z-index: -1;
+  }
+
+    header {
+      background-size: cover;
+      background-position: center;
+      height: 280px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 10px 20px;
+      border-radius: 12px;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .mensagem {
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .mensagem img {
+      width: 100%;
+      border-radius: 12px;
+      margin-top: 10px;
+    }
+
+    .presentes {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .card {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .card h3 {
+      margin: 0;
+    }
+
+    .valor {
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    .botao {
+      display: inline-block;
+      background-color: #0077cc;
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      border-radius: 8px;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+
+    .botao:hover {
+      background-color: #005fa3;
+    }
+
+    .copiado {
+      margin-top: 8px;
+      color: green;
+      font-size: 14px;
+      display: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #777;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        height: 180px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Formatura de Medicina<br>Henrique Marcolino</h1>
+  </header>
+
+  <div class="container">
+    <div class="mensagem">
+      <img src="foto_convite.webp" alt="Convite Henrique">
+      <p>Olá! Que alegria poder compartilhar esse momento tão especial com você!</p>
+      <p>Depois de anos de estudo, plantões, provas e superações, chegou a hora de celebrar a minha formatura de Medicina. Um sonho que se tornou realidade com muito esforço e apoio de pessoas queridas como você.</p>
+      <p>Pensando em tornar esse novo ciclo ainda mais significativo, preparei uma lista de presentes com algumas sugestões que podem contribuir diretamente para essa nova fase da minha jornada profissional e pessoal.</p>
+      <p>Cada presente representa uma maneira de caminhar comigo nessa nova fase, contribuindo diretamente para minha formação, experiências e passos que darei ao longo de toda a minha carreira médica.</p>
+      <p>Sinta-se à vontade para escolher o que fizer sentido para você.</p>
+      <p>A sua presença, carinho e torcida já são um grande presente.</p>
+      <p><strong>Com gratidão,<br>Henrique Marcolino</strong></p>
+    </div>
+
+    <h2>🎁 Lista de Presentes</h2>
+    <div class="presentes">
+      <div class="card">
+        <h3>📘 Material de estudo digital (E-books)</h3>
+        <p class="valor">Voucher R$ 95,00</p>
+        <button class="botao" onclick="copiarPix(this)">Copiar e-mail para Pix</button>
+        <div class="copiado">E-mail copiado: henrique.marcolino@hotmail.com</div>
+      </div>
+
+      <div class="card">
+        <h3>🩺 Plataforma digital de estudo médico</h3>
+        <p class="valor">Voucher R$ 149,00</p>
+        <button class="botao" onclick="copiarPix(this)">Copiar e-mail para Pix</button>
+        <div class="copiado">E-mail copiado: henrique.marcolino@hotmail.com</div>
+      </div>
+
+      <div class="card">
+        <h3>📚 Livros médicos</h3>
+        <p class="valor">Voucher R$ 189,00</p>
+        <button class="botao" onclick="copiarPix(this)">Copiar e-mail para Pix</button>
+        <div class="copiado">E-mail copiado: henrique.marcolino@hotmail.com</div>
+      </div>
+
+      <div class="card">
+        <h3>🩹 Instrumentos médicos</h3>
+        <p class="valor">Voucher R$ 249,00</p>
+        <button class="botao" onclick="copiarPix(this)">Copiar e-mail para Pix</button>
+        <div class="copiado">E-mail copiado: henrique.marcolino@hotmail.com</div>
+      </div>
+      <div class="card">
+        <h3>📅 Congressos médicos</h3>
+        <p class="valor">Voucher R$ 349,00</p>
+        <button class="botao" onclick="copiarPix(this)">Copiar e-mail para Pix</button>
+        <div class="copiado">E-mail copiado: henrique.marcolino@hotmail.com</div>
+      </div>
+      <div class="card">
+        <h3>✨ Presente Personalizado</h3>
+        <p class="valor">Voucher Personalise</p>
+        <button class="botao" onclick="copiarPix(this)">Copiar e-mail para Pix</button>
+        <div class="copiado">E-mail copiado: henrique.marcolino@hotmail.com</div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    Obrigado por fazer parte dessa conquista. ❤️
+  </footer>
+
+  <script>
+    function copiarPix(botao) {
+      const email = "henrique.marcolino@hotmail.com";
+      navigator.clipboard.writeText(email).then(() => {
+        const msg = botao.nextElementSibling;
+        msg.style.display = "block";
+        setTimeout(() => {
+          msg.style.display = "none";
+        }, 3000);
+      });
+    }
+  </script>
+</body>
+</html>
